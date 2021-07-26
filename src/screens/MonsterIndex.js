@@ -1,18 +1,17 @@
-import { useState,useEffect } from 'react';
-import axios from 'axios';
+
+import TypesIndex from '../components/MonsterIndex/TypesIndex';
+import GenerationButton from '../components/MonsterIndex/GenerationButton';
+import MonsterCard from '../components/MonsterIndex/MonsterCard';
+import {Grid} from '@material-ui/core';
+
 
 const MonsterIndex = () => {
-    const [monster,setMonster] = useState([]);
-    useEffect(() => {
-        const getMonster = async () => {
-          const response = await axios.get('https://api.github.com/users/tagty');
-          setMonster(response.data);
-        }
-        getMonster();
-    }, []);
-
     return (
-        <div>{monster.id}</div>
+        <Grid>
+            <TypesIndex />
+            <GenerationButton />
+            <MonsterCard />
+        </Grid>
     );
 }
 
