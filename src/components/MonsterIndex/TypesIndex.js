@@ -62,7 +62,11 @@ const useStyles = makeStyles({
 
 const TypesIndex = () => {
     const classes = useStyles();
-    
+   
+    //const array = Generate1.concat(Generate2,Generate3,Generate4,Generate5,Generate6,Generate7,Generate8) 
+    //const result = array.filter(x=>x.types.includes(type));
+    //dispatch.getMonsterSuccess({type: MONSTER_DATA_SUCCESS, payload: result });
+  
     return (
         <Grid 
             container 

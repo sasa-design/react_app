@@ -1,6 +1,7 @@
 import React from 'react';
-import {Generate1} from '../../utils/monsterData/Generate1';
 import { Grid,makeStyles,Card,CardActions,CardContent,Button,Typography } from '@material-ui/core';
+import { connect } from 'react-redux'
+import { getMonsterSuccess } from '../../actions/MonsterIndex/action'
 
 const useStyles = makeStyles({
   root: {
@@ -19,10 +20,12 @@ const useStyles = makeStyles({
   },
 });
 
-const MonsterCard = () => {
+const MonsterCard = ({
+    data,
+    dispatchgetMonsterSuccess,
+}) => {
     const classes = useStyles();
-    const monsters = Generate1;
-    const index = monsters.map((items) => {
+    const index = data.map((items) => {
         return (
             <Grid item>
                 <Card className={classes.root}>
@@ -56,6 +59,9 @@ const MonsterCard = () => {
     )
 }
 
-export default MonsterCard;
+export default connect(
+    state => ({ data: state.monsterindex.data.monsters }),
+    dispatch => ({ dispatchgetMonsterSuccess: monster => dispatch(getMonsterSuccess(monster)) })
+)(MonsterCard)
 
 

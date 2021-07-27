@@ -1,74 +1,93 @@
 export const Types = [
     {
       "short": "無",
-      "japanese": "ノーマル"
+      "japanese": "ノーマル",
+      "color": "white"
     },
     {
       "short": "闘",
-      "japanese": "かくとう"
+      "japanese": "かくとう",
+      "color": "orange",
     },
     {
       "short": "飛",
-      "japanese": "ひこう"
+      "japanese": "ひこう",
+      "color": "lightblue"
     },
     {
       "short": "毒",
-      "japanese": "どく"
+      "japanese": "どく",
+      "color": "purple"
     },
     {
       "short": "地",
-      "japanese": "じめん"
+      "japanese": "じめん",
+      "color": "deeporange"
     },
     {
       "short": "岩",
-      "japanese": "いわ"
+      "japanese": "いわ",
+      "color": "brown"
     },
     {
       "short": "虫",
-      "japanese": "むし"
+      "japanese": "むし",
+      "color": "lime"
     },
     {
       "short": "霊",
-      "japanese": "ゴースト"
+      "japanese": "ゴースト",
+      "color": "deeppurple"
     },
     {
       "short": "鋼",
-      "japanese": "はがね"
+      "japanese": "はがね",
+      "color": "grey"
     },
     {
       "short": "炎",
-      "japanese": "ほのお"
+      "japanese": "ほのお",
+      "color": "red",
     },
     {
       "short": "水",
-      "japanese": "みず"
+      "japanese": "みず",
+      "color": "blue"
     },
     {
       "short": "草",
-      "japanese": "くさ"
+      "japanese": "くさ",
+      "color": "green"
     },
     {
       "short": "雷",
-      "japanese": "でんき"
+      "japanese": "でんき",
+      "color": "yellow"
     },
     {
       "short": "超",
-      "japanese": "エスパー"
+      "japanese": "エスパー",
+      "color": "pink"
     },
     {
       "short": "氷",
-      "japanese": "こおり"
+      "japanese": "こおり",
+      "color": "whiteblue"
     },
     {
       "short": "龍",
-      "japanese": "ドラゴン"
+      "japanese": "ドラゴン",
+      "color": "indigo"
     },
     {
       "short": "悪",
-      "japanese": "あく"
+      "japanese": "あく",
+      "color": "black"
     },
     {
       "short": "妖",
-      "japanese": "フェアリー"
+      "japanese": "フェアリー",
+      "color": "whitepink"
     }
 ]
+
